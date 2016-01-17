@@ -1,0 +1,11 @@
+{
+  "name": "littleplanet-vr",
+  "version": "0.0.0",
+  "description": "Main web for littlevrplanet project",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Oscar Caballero",
+  "license": "ISC"
+}
