@@ -1,0 +1,20 @@
+{
+  "name": "littleplanet-vr",
+  "description": "Main web for littlevrplanet project",
+  "main": "index.js",
+  "authors": [
+    "Oscar Caballero"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/littleplanet-vr/github-page-builder",
+  "moduleType": [
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
