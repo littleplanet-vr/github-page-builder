@@ -72,76 +72,12 @@ html(lang='en')
               .row
                 .col-md-12.text-center
                   h3.light.white LittleVR Planet
-                  h1.white.typed Welcome to new VR era for education.
+                  h1.white.typed VR low cost is here for the smallest.
                   span.typed-cursor |
-      section
+      section#services.section
         .cut.cut-top
         .container
           .row.intro-tables
-            .col-md-4
-              .intro-table.intro-table-first
-                h5.white.heading Today&apos;s Schedule
-                .owl-carousel.owl-schedule.bottom
-                  .item
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Early Exercise
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Muscle Building
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Cardio
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                  .item
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Early Exercise
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Muscle Building
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Cardio
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                  .item
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Early Exercise
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Muscle Building
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-                    | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                    .schedule-row.row
-                      .col-xs-6
-                        h5.regular.white Cardio
-                      | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
-                      .col-xs-6.text-right
-                        h5.white 8:30 - 10:00
-            .col-md-4
-              .intro-table.intro-table-hover
-                h5.white.heading.hide-hover Premium Membership
-                .bottom
-                  h4.white.heading.small-heading.no-margin.regular Register Today
-                  h4.white.heading.small-pt 20% Discount
-                  a.btn.btn-white-fill.expand(href='#') Register
             .col-md-4
               .intro-table.intro-table-third
                 h5.white.heading Happy Clients
@@ -155,8 +91,15 @@ html(lang='en')
                   .item
                     h4.white.heading.content Incredible transformation and I feel so healthy!
                     h5.white.heading.light.author Christina Goldman
+            .col-md-4
+              .intro-table.intro-table-hover
+                h5.white.heading.hide-hover Are you interested?
+                .bottom
+                  h4.white.heading.small-heading.no-margin.regular Register Today
+                  h4.white.heading.small-pt 20% Discount
+                  a.btn.btn-white-fill.expand(data-toggle='modal', data-target='#modal1') Request invite
                     
-      section#services.section.section-padded
+      section#services.section
         .container
           .row.text-center.title
             h2 Our goal
@@ -170,77 +113,51 @@ html(lang='en')
                       li
                         a(href='#0', data-date='20/12/2015') 20 Dec, 2015
                       li
-                        a.selected(href='#0', data-date='01/03/2016') 1 Feb, 2016
+                        a.selected(href='#0', data-date='31/01/2018') 1 Jan, 2016
                       li
-                        a(href='#0', data-date='20/04/2016') 20 Mar
+                        a(href='#0', data-date='28/02/2020') 28 Feb, 2016
                       li
-                        a(href='#0', data-date='20/05/2016') 20 May
+                        a(href='#0', data-date='30/04/2023') 30 Mar, 2016
+                      li
+                        a(href='#0', data-date='30/05/2027') 30 May, 2016
                     span.filling-line(aria-hidden='true')
                   // .events
                 // .events-wrapper
+                
                 ul.cd-timeline-navigation
                   li
                     a.prev.inactive(href='#0') Prev
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                   li
                     a.next(href='#0') Next
                 // .cd-timeline-navigation
               // .timeline
               .events-content
                 ol
-                  li.selected(data-date='16/01/2014')
-                    h2 Horizontal Timeline
+                  li(data-date='20/12/2015')
+                    h2 Start Project
                     em January 16th, 2014
                     p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='28/02/2014')
+                      | Este día comienza el proyecto, puesta en común de la 
+                      | idea entre los fundadores y comenzaremos los contactos 
+                      | para llevarla a cabo
+                  li.selected(data-date='31/01/2018')
                     h2 Event title here
                     em February 28th, 2014
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='20/04/2014')
+                  li(data-date='28/02/2020')
                     h2 Event title here
                     em March 20th, 2014
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='20/05/2014')
+                  li(data-date='30/04/2023')
                     h2 Event title here
                     em May 20th, 2014
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='09/07/2014')
+                  li(data-date='30/05/2027')
                     h2 Event title here
                     em July 9th, 2014
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='30/08/2014')
-                    h2 Event title here
-                    em August 30th, 2014
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='15/09/2014')
-                    h2 Event title here
-                    em September 15th, 2014
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='01/11/2014')
-                    h2 Event title here
-                    em November 1st, 2014
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='10/12/2014')
-                    h2 Event title here
-                    em December 10th, 2014
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='19/01/2015')
-                    h2 Event title here
-                    em January 19th, 2015
-                    p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
-                  li(data-date='03/03/2015')
-                    h2 Event title here
-                    em March 3rd, 2015
                     p
                       | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
               // .events-content
@@ -253,10 +170,10 @@ html(lang='en')
           .row
             .col-md-4
               .team.text-center
-                .cover(style="background:url('img/team/team-cover1.jpg'); background-size:cover;")
+                .cover(style="background:url('img/team/team-cover-borja.jpg'); background-size:cover;")
                   .overlay.text-center
-                    h3.white $69.00
-                    h5.light.light-white 1 - 5 sessions / month
+                    h3.white Hard-worker
+                    h5.light.light-white sometimes
                 img.avatar(src='img/team/borja-godoy.jpg', alt='Team Image', height='120', width='120')
                 .title
                   h4 Borja Godoy
@@ -264,53 +181,53 @@ html(lang='en')
                 //button.btn.btn-blue-fill(data-toggle='modal', data-target='#modal1') Sign Up Now
             .col-md-4
               .team.text-center
-                .cover(style="background:url('img/team/team-cover2.jpg'); background-size:cover;")
+                .cover(style="background:url('img/team/team-cover-oscar.jpg'); background-size:cover;")
                   .overlay.text-center
-                    h3.white $69.00
-                    h5.light.light-white 1 - 5 sessions / month
+                    h3.white Friendly
+                    h5.light.light-white sometimes
                 img.avatar(src='img/team/oscar-caballero.jpg', alt='Team Image', height='120', width='120')
                 .title
                   h4 Oscar Caballero
                   h5.muted.regular CTO and Co-founder
                 //a.btn.btn-blue-fill.ripple(href='#', data-toggle='modal', data-target='#modal1') Sign Up Now
-      section#pricing.section
-        .container
-          .row.title.text-center
-            h2.margin-top.white Pricing
-            h4.light.white Choose your favorite pricing plan and sign up today!
-          .row.no-margin
-            .col-md-7.no-padding.col-md-offset-5.pricings.text-center
-              .pricing
-                .box-main.active(data-img='img/pricing1.jpg')
-                  h4.white Yoga Pilates
-                  h4.white.regular.light
-                    | $850.00 
-                    span.small-font / year
-                  a.btn.btn-white-fill(href='#', data-toggle='modal', data-target='#modal1') Sign Up Now
-                  i.info-icon.icon_question
-                .box-second.active
-                  ul.white-list.text-left
-                    li One Personal Trainer
-                    li Big gym space for training
-                    li Free tools &amp; props
-                    li Free locker
-                    li Free before / after shower
-              .pricing
-                .box-main(data-img='img/pricing2.jpg')
-                  h4.white Cardio Training
-                  h4.white.regular.light
-                    | $100.00 
-                    span.small-font / year
-                  a.btn.btn-white-fill(href='#', data-toggle='modal', data-target='#modal1') Sign Up Now
-                  i.info-icon.icon_question
-                .box-second
-                  ul.white-list.text-left
-                    li One Personal Trainer
-                    li Big gym space for training
-                    li Free tools &amp; props
-                    li Free locker
-                    li Free before / after shower
-      | &#x9;
+      //
+        section#pricing.section
+          .container
+            .row.title.text-center
+              h2.margin-top.white Pricing
+              h4.light.white Choose your favorite pricing plan and sign up today!
+            .row.no-margin
+              .col-md-7.no-padding.col-md-offset-5.pricings.text-center
+                .pricing
+                  .box-main.active(data-img='img/pricing1.jpg')
+                    h4.white Yoga Pilates
+                    h4.white.regular.light
+                      | $850.00 
+                      span.small-font / year
+                    a.btn.btn-white-fill(href='#', data-toggle='modal') For kids
+                    i.info-icon.icon_question
+                  .box-second.active
+                    ul.white-list.text-left
+                      li One Personal Trainer
+                      li Big gym space for training
+                      li Free tools &amp; props
+                      li Free locker
+                      li Free before / after shower
+                .pricing
+                  .box-main(data-img='img/pricing2.jpg')
+                    h4.white Cardio Training
+                    h4.white.regular.light
+                      | $100.00 
+                      span.small-font / year
+                    a.btn.btn-white-fill(href='#', data-toggle='modal') For old kids
+                    i.info-icon.icon_question
+                  .box-second
+                    ul.white-list.text-left
+                      li One Personal Trainer
+                      li Big gym space for training
+                      li Free tools &amp; props
+                      li Free locker
+                      li Free before / after shower
       section.section.section-padded.blue-bg
         .container
           .row
@@ -359,22 +276,6 @@ html(lang='en')
               button.btn.btn-submit(type='submit') Submit
       footer
         .container
-          .row
-            .col-sm-6.text-center-mobile
-              h3.white Reserve a Free Trial Class!
-              h5.light.regular.light-white Shape your body and improve your health.
-              a.btn.btn-blue.ripple.trial-button(href='#') Start Free Trial
-            .col-sm-6.text-center-mobile
-              h3.white
-                | Opening Hours 
-                span.open-blink
-              .row.opening-hours
-                .col-sm-6.text-center-mobile
-                  h5.light-white.light Mon - Fri
-                  h3.regular.white 9:00 - 22:00
-                .col-sm-6.text-center-mobile
-                  h5.light-white.light Sat - Sun
-                  h3.regular.white 10:00 - 18:00
           .row.bottom-footer.text-center-mobile
             .col-sm-8
               p
@@ -384,15 +285,17 @@ html(lang='en')
                 a(href='http://tympanus.net/codrops/') Codrops
             .col-sm-4.text-right.text-center-mobile
               ul.social-footer
+                //
+                  li
+                    a(href='http://www.facebook.com/pages/Codrops/159107397912')
+                      i.fa.fa-facebook
                 li
-                  a(href='http://www.facebook.com/pages/Codrops/159107397912')
-                    i.fa.fa-facebook
-                li
-                  a(href='http://www.twitter.com/codrops')
+                  a(href='http://www.twitter.com/littlevrplanet')
                     i.fa.fa-twitter
-                li
-                  a(href='https://plus.google.com/101095823814290637419')
-                    i.fa.fa-google-plus
+                //
+                  li
+                    a(href='https://plus.google.com/101095823814290637419')
+                      i.fa.fa-google-plus
       // Holder for mobile navigation
       .mobile-nav
         ul
