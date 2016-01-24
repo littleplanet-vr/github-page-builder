@@ -1,41 +1,6 @@
 doctype html
 html(lang='en')
-  head
-      meta(charset='UTF-8')
-      meta(http-equiv='X-UA-Compatible', content='IE=edge')
-      meta(name='viewport', content='width=device-width, initial-scale=1')
-      
-      title LittleVR planet
-      
-      link(rel='apple-touch-icon', sizes='57x57', href='img/favicons/apple-touch-icon-57x57.png')
-      link(rel='apple-touch-icon', sizes='60x60', href='img/favicons/apple-touch-icon-60x60.png')
-      link(rel='icon', type='image/png', href='img/favicons/favicon-32x32.png', sizes='32x32')
-      link(rel='icon', type='image/png', href='img/favicons/favicon-16x16.png', sizes='16x16')
-      link(rel='manifest', href='img/favicons/manifest.json')
-      link(rel='shortcut icon', href='img/favicons/favicon.ico')
-      
-      meta(name='msapplication-TileColor', content='#00a8ff')
-      meta(name='msapplication-config', content='img/favicons/browserconfig.xml')
-      meta(name='theme-color', content='#ffffff')
-      
-      // Normalize
-      link(rel='stylesheet', type='text/css', href='css/normalize.css')
-      // Bootstrap
-      link(rel='stylesheet', type='text/css', href='css/bootstrap.css')
-      // Owl
-      link(rel='stylesheet', type='text/css', href='css/owl.css')
-      // Animate.css
-      link(rel='stylesheet', type='text/css', href='css/animate.css')
-      // Font Awesome
-      link(rel='stylesheet', type='text/css', href='fonts/font-awesome-4.1.0/css/font-awesome.min.css')
-      // Elegant Icons
-      link(rel='stylesheet', type='text/css', href='fonts/eleganticons/et-icons.css')
-      // Main style
-      link(rel='stylesheet', type='text/css', href='css/cardio.css')
-      link(href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic', rel='stylesheet', type='text/css')
-      link(rel='stylesheet', href='css/reset.css')
-      link(rel='stylesheet', href='css/style-timeline.css')
-      script(src='js/modernizr.js')
+    include ./views/head.jade
     body
       .preloader
         img(src='img/loader.gif', alt='', height=150)
@@ -81,70 +46,7 @@ html(lang='en')
       section#services.section
         .container
           .row.services
-            h2.text-center Our goal
-            section.cd-horizontal-timeline
-              .timeline
-                .events-wrapper
-                  .events
-                    ol
-                      li
-                        a(href='#0', data-date='20/12/2015') 20 Dec, 2015
-                      li
-                        a.selected(href='#0', data-date='31/01/2018') 
-                          | 31 Jan, 2016
-                      li
-                        a(href='#0', data-date='28/02/2020') 28 Feb, 2016
-                      li
-                        a(href='#0', data-date='30/04/2023') 31 April, 2016
-                      li
-                        a(href='#0', data-date='30/05/2027') 30 May, 2016
-                    span.filling-line(aria-hidden='true')
-                  // .events
-                // .events-wrapper
-                ul.cd-timeline-navigation
-                  li
-                    a.prev.inactive(href='#0') Prev
-                  li
-                    a.next(href='#0') Next
-                // .cd-timeline-navigation
-              // .timeline
-              .events-content
-                ol
-                  li(data-date='20/12/2015')
-                    h2 Start Project
-                    em Dicember 20th, 2014
-                    p
-                      | This day begins the project, sharing the idea with the 
-                      | founders and contacts will begin to implement it.
-                  li.selected(data-date='31/01/2018')
-                    h2 Launch personal brand
-                    em January 31th, 2014
-                    p
-                      | This is the day that marks the LittleBigPlanet takes 
-                      | shape, logo, web, values ... everything will be presented
-                      | to users, what impact will our little project? What is
-                      | the impact?
-                  li(data-date='28/02/2020')
-                    h2 Presentation Prototype design
-                    em Febrary 28th, 2014
-                    p
-                      | Now we present the design of the prototype of the LittleVR,
-                      | the first virtual reality glasses whose price does not 
-                      | exceed € 70 .How it be? Are you the longer you imagine?
-                  li(data-date='30/04/2023')
-                    h2 Presentation Prototype device
-                    em April 31th, 2014
-                    p
-                      | We are about to reach our goal, and now it will present 
-                      | what the brains of LittleVR a hardware that promises to
-                      | give maximum performance at minimum cost possible.
-                  li(data-date='30/05/2027')
-                    h2 Launch KickStarter
-                    em May 30th, 2014
-                    p
-                      | The real test begins, will we get the investment we hope
-                      | to raise Kickstarter?
-              // .events-content
+            include ./views/timeline.jade
         .cut.cut-bottom
       section#team.section.gray-bg
         .container
@@ -152,27 +54,7 @@ html(lang='en')
             h2.margin-top Team
             h4.light.muted We&apos;re a dream team!
           .row
-            .col-md-4
-              .team.text-center
-                .cover(style="background:url('img/team/team-cover-borja.jpg'); background-size:cover;")
-                  .overlay.text-center
-                    h3.white Hard-worker
-                    h5.light.light-white sometimes
-                img.avatar(src='img/team/borja-godoy.jpg', alt='Team Image', height='120', width='120')
-                .title
-                  h4 Borja Godoy
-                  h5.muted.regular CEO and Co-founder
-            .col-md-4
-              .team.text-center
-                .cover(style="background:url('img/team/team-cover-oscar.jpg'); background-size:cover;")
-                  .overlay.text-center
-                    h3.white Friendly
-                    h5.light.light-white sometimes
-                img.avatar(src='img/team/oscar-caballero.jpg', alt='Team Image', height='120', width='120')
-                .title
-                  h4 Oscar Caballero
-                  h5.muted.regular CTO and Co-founder
-                //a.btn.btn-blue-fill.ripple(href='#', data-toggle='modal', data-target='#modal1') Sign Up Now
+            include ./views/team.jade
       section.section.section-padded.blue-bg
         .container
           .row
@@ -235,14 +117,4 @@ html(lang='en')
         a.close-link(href='#')
           i.arrow_up
       // Scripts
-      script(src='js/jquery-1.11.1.min.js')
-      script(src='js/owl.carousel.min.js')
-      script(src='js/bootstrap.min.js')
-      script(src='js/wow.min.js')
-      script(src='js/typewriter.js')
-      script(src='js/jquery.onepagenav.js')
-      script(src='js/tweetie.min.js')
-      script(src='js/main.js')
-      script(src='js/jquery-2.1.4.js')
-      script(src='js/jquery.mobile.custom.min.js')
-      script(src='js/timeline.js')
+      include ./views/scripts.jade
