@@ -12,7 +12,7 @@
 
         // Default settings
         var settings = $.extend({
-            'username': 'littlevrplanet',
+            'username': null,
             'list': null,
             'hashtag': null,
             'count': 10,

@@ -16,14 +16,16 @@ jQuery(function($) {
 			});
 		});
 
+		$('.tweet').twittie();
+
 		// Twitter stream
-		/* $('section section-padded blue-bg container row col-md-8 col-md-offset-2 owl-twitter owl-carousel').twittie({
+		$('section section-padded blue-bg container row col-md-8 col-md-offset-2 owl-twitter owl-carousel').twittie({
 				username: 'littlevrplanet',
-				list: '',
 				dateFormat: '%b. %d, %Y',
 				template: '<div class="item text-center"><i class="icon fa fa-twitter"></i><h4 class="white light">{{tweet}}</h4><h4 class="light-white light">{{date}}</h4>',
-				count: 10
-		});*/
+				count: 10,
+				hideReplies: true
+		});
 
 		// Header Init
 		if ($(window).height() > $(window).width()) {
