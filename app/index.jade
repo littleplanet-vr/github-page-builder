@@ -34,37 +34,11 @@ html(lang='en')
       link(rel='stylesheet', type='text/css', href='css/cardio.css')
       link(href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic', rel='stylesheet', type='text/css')
       link(rel='stylesheet', href='css/reset.css')
-      // CSS reset
       link(rel='stylesheet', href='css/style-timeline.css')
-      // Resource style
       script(src='js/modernizr.js')
-      // Modernizr
     body
       .preloader
-        img(src='img/loader.gif', alt='Preloader image')
-      //
-        <nav class="navbar">
-        <div class="container">
-        <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right main-nav">
-        <li><a href="#intro">Intro</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
-        </ul>
-        </div>
-        </div>
-        </nav>
+        img(src='img/loader.gif', alt='Preloader image', height=150)
       header#intro
         .container
           .table
@@ -74,37 +48,41 @@ html(lang='en')
                   h3.light.white LittleVR Planet
                   h1.white.typed VR low cost is here for the smallest.
                   span.typed-cursor |
-      section#services.section
+                a.btn.btn-white-fill.expand(href='#services') Discover the project
+      section.section
         .cut.cut-top
         .container
           .row.intro-tables
-            .col-md-4
-              .intro-table.intro-table-third
-                h5.white.heading Happy Clients
+            .col-md-8
+              .intro-table.intro-table-first
+                //h5.white.heading Happy tittle for all
                 .owl-testimonials.bottom
                   .item
-                    h4.white.heading.content I couldn&apos;t be more happy with the results!
-                    h5.white.heading.light.author Adam Jordan
+                    h4.white.heading.content What is LittleVRPlanet?
+                    h5.white.heading.light.author 
+                      | "LittleVRPlanet wants to offer the VR glass in low cost
+                      | along with a wide platform full of educational and 
+                      | entertainment content for kids."
                   .item
-                    h4.white.heading.content I can&apos;t believe how much better I feel!
-                    h5.white.heading.light.author Greg Pardon
-                  .item
-                    h4.white.heading.content Incredible transformation and I feel so healthy!
-                    h5.white.heading.light.author Christina Goldman
+                    h4.white.heading.content How are we going to get?
+                    h5.white.heading.light.author 
+                      | We want to make it cheaper developing a mobile replacement
+                      | device. Nowadays, smartphones with virtual reality support
+                      | are expensive that’s why enjoying virtual reality is not
+                      | allowed to everybody.
             .col-md-4
               .intro-table.intro-table-hover
                 h5.white.heading.hide-hover Are you interested?
                 .bottom
-                  h4.white.heading.small-heading.no-margin.regular Register Today
-                  h4.white.heading.small-pt 20% Discount
-                  a.btn.btn-white-fill.expand(data-toggle='modal', data-target='#modal1') Request invite
+                  h4.white.heading.small-heading.no-margin.regular Register
+                  h4.white.heading.small-pt for see the project evolution
+                  a.btn.btn-white-fill.expand(data-toggle='modal', data-target='#modal1') 
+                    | Request invite
                     
       section#services.section
         .container
-          .row.text-center.title
-            h2 Our goal
-            // <h4 class="light muted">Achieve the best results with our wide variety of training options!</h4>
           .row.services
+            h2.text-center Our goal
             section.cd-horizontal-timeline
               .timeline
                 .events-wrapper
@@ -113,17 +91,17 @@ html(lang='en')
                       li
                         a(href='#0', data-date='20/12/2015') 20 Dec, 2015
                       li
-                        a.selected(href='#0', data-date='31/01/2018') 1 Jan, 2016
+                        a.selected(href='#0', data-date='31/01/2018') 
+                          | 31 Jan, 2016
                       li
                         a(href='#0', data-date='28/02/2020') 28 Feb, 2016
                       li
-                        a(href='#0', data-date='30/04/2023') 30 Mar, 2016
+                        a(href='#0', data-date='30/04/2023') 31 April, 2016
                       li
                         a(href='#0', data-date='30/05/2027') 30 May, 2016
                     span.filling-line(aria-hidden='true')
                   // .events
                 // .events-wrapper
-                
                 ul.cd-timeline-navigation
                   li
                     a.prev.inactive(href='#0') Prev
@@ -135,31 +113,38 @@ html(lang='en')
                 ol
                   li(data-date='20/12/2015')
                     h2 Start Project
-                    em January 16th, 2014
+                    em Dicember 20th, 2014
                     p
-                      | Este día comienza el proyecto, puesta en común de la 
-                      | idea entre los fundadores y comenzaremos los contactos 
-                      | para llevarla a cabo
+                      | This day begins the project, sharing the idea with the 
+                      | founders and contacts will begin to implement it.
                   li.selected(data-date='31/01/2018')
-                    h2 Event title here
-                    em February 28th, 2014
+                    h2 Launch personal brand
+                    em January 31th, 2014
                     p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                      | This is the day that marks the LittleBigPlanet takes 
+                      | shape, logo, web, values ... everything will be presented
+                      | to users, what impact will our little project? What is
+                      | the impact?
                   li(data-date='28/02/2020')
-                    h2 Event title here
-                    em March 20th, 2014
+                    h2 Presentation Prototype design
+                    em Febrary 28th, 2014
                     p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                      | Now we present the design of the prototype of the LittleVR,
+                      | the first virtual reality glasses whose price does not 
+                      | exceed € 70 .How it be? Are you the longer you imagine?
                   li(data-date='30/04/2023')
-                    h2 Event title here
-                    em May 20th, 2014
+                    h2 Presentation Prototype device
+                    em April 31th, 2014
                     p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                      | We are about to reach our goal, and now it will present 
+                      | what the brains of LittleVR a hardware that promises to
+                      | give maximum performance at minimum cost possible.
                   li(data-date='30/05/2027')
-                    h2 Event title here
-                    em July 9th, 2014
+                    h2 Launch KickStarter
+                    em May 30th, 2014
                     p
-                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
+                      | The real test begins, will we get the investment we hope
+                      | to raise Kickstarter?
               // .events-content
         .cut.cut-bottom
       section#team.section.gray-bg
@@ -178,7 +163,6 @@ html(lang='en')
                 .title
                   h4 Borja Godoy
                   h5.muted.regular CEO and Co-founder
-                //button.btn.btn-blue-fill(data-toggle='modal', data-target='#modal1') Sign Up Now
             .col-md-4
               .team.text-center
                 .cover(style="background:url('img/team/team-cover-oscar.jpg'); background-size:cover;")
@@ -190,57 +174,11 @@ html(lang='en')
                   h4 Oscar Caballero
                   h5.muted.regular CTO and Co-founder
                 //a.btn.btn-blue-fill.ripple(href='#', data-toggle='modal', data-target='#modal1') Sign Up Now
-      //
-        section#pricing.section
-          .container
-            .row.title.text-center
-              h2.margin-top.white Pricing
-              h4.light.white Choose your favorite pricing plan and sign up today!
-            .row.no-margin
-              .col-md-7.no-padding.col-md-offset-5.pricings.text-center
-                .pricing
-                  .box-main.active(data-img='img/pricing1.jpg')
-                    h4.white Yoga Pilates
-                    h4.white.regular.light
-                      | $850.00 
-                      span.small-font / year
-                    a.btn.btn-white-fill(href='#', data-toggle='modal') For kids
-                    i.info-icon.icon_question
-                  .box-second.active
-                    ul.white-list.text-left
-                      li One Personal Trainer
-                      li Big gym space for training
-                      li Free tools &amp; props
-                      li Free locker
-                      li Free before / after shower
-                .pricing
-                  .box-main(data-img='img/pricing2.jpg')
-                    h4.white Cardio Training
-                    h4.white.regular.light
-                      | $100.00 
-                      span.small-font / year
-                    a.btn.btn-white-fill(href='#', data-toggle='modal') For old kids
-                    i.info-icon.icon_question
-                  .box-second
-                    ul.white-list.text-left
-                      li One Personal Trainer
-                      li Big gym space for training
-                      li Free tools &amp; props
-                      li Free locker
-                      li Free before / after shower
       section.section.section-padded.blue-bg
         .container
           .row
             .col-md-8.col-md-offset-2
               .owl-twitter.owl-carousel
-                .item.text-center
-                  i.icon.fa.fa-twitter
-                  h4.white.light To enjoy the glow of good health, you must exercise.
-                  h4.light-white.light #health #training #exercise
-                .item.text-center
-                  i.icon.fa.fa-twitter
-                  h4.white.light To enjoy the glow of good health, you must exercise.
-                  h4.light-white.light #health #training #exercise
                 .item.text-center
                   i.icon.fa.fa-twitter
                   h4.white.light To enjoy the glow of good health, you must exercise.
@@ -251,21 +189,20 @@ html(lang='en')
             a.close-link(href='#')
               i.icon_close_alt2
             h3.white Sign Up
-            form.popup-form(action='')
-              input.form-control.form-white(type='text', placeholder='Full Name')
-              input.form-control.form-white(type='text', placeholder='Email Address')
+            form.popup-form(action='//littlevrplanet.us12.list-manage.com/subscribe/post?u=d507c6c880a4a47d80794c829&amp;id=bd5b812d92', method='post', id='mc-embedded-subscribe-form', name='mc-embedded-subscribe-form', class='validate', target='_blank', novalidate)
+              input.form-control.form-white(type='email', value='', name='EMAIL', class='required email', id='mce-EMAIL', placeholder='Email Address')
+              input.form-control.form-white(type='text', value='', name='FNAME', class='', id='mce-FNAME', placeholder='First Name')
+              input.form-control.form-white(type='text', value='', name='LNAME', class='', id='mce-LNAME', placeholder='Last Name')
               .dropdown
                 button#dLabel.form-control.form-white.dropdown(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-                  | Pricing Plan
+                  | Who are you?
                 ul.dropdown-menu.animated.fadeIn(role='menu', aria-labelledby='dLabel')
                   li.animated.lightSpeedIn
-                    a(href='#') 1 month membership ($150)
+                    a(href='#') Developer
                   li.animated.lightSpeedIn
-                    a(href='#') 3 month membership ($350)
+                    a(href='#') VR fan
                   li.animated.lightSpeedIn
-                    a(href='#') 1 year membership ($1000)
-                  li.animated.lightSpeedIn
-                    a(href='#') Free trial class
+                    a(href='#') Press
               .checkbox-holder.text-left
                 .checkbox
                   input#squaredOne(type='checkbox', value='None', name='check')
@@ -273,29 +210,25 @@ html(lang='en')
                     span
                       | I Agree to the 
                       strong Terms &amp; Conditions
-              button.btn.btn-submit(type='submit') Submit
+              button.btn.btn-submit(type='submit', value='Subscribe', name='subscribe', id='mc-embedded-subscribe', class='button') Submit
       footer
         .container
           .row.bottom-footer.text-center-mobile
             .col-sm-8
               p
-                | &copy; 2015 All Rights Reserved. Powered by 
-                a(href='http://www.phir.co/') PHIr
-                |  exclusively for 
-                a(href='http://tympanus.net/codrops/') Codrops
+                | &copy; 2015 LittleVR All Rights Reserved.
             .col-sm-4.text-right.text-center-mobile
               ul.social-footer
                 //
                   li
-                    a(href='http://www.facebook.com/pages/Codrops/159107397912')
+                    a(href='http://www.facebook.com')
                       i.fa.fa-facebook
                 li
                   a(href='http://www.twitter.com/littlevrplanet')
                     i.fa.fa-twitter
-                //
-                  li
-                    a(href='https://plus.google.com/101095823814290637419')
-                      i.fa.fa-google-plus
+                li
+                  a(href='https://plus.google.com')
+                    i.fa.fa-google-plus
       // Holder for mobile navigation
       .mobile-nav
         ul

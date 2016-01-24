@@ -33,8 +33,8 @@ body {
 
 .preloader img {
 	position: absolute;
-	top: calc(50% - 32px);
-	left: calc(50% - 32px);
+	top: calc(50% - 110px);
+	left: calc(50% - 110px);
 }
 
 .preloader div {
@@ -158,6 +158,7 @@ a {
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
+
 /* Navigation Bar ( Navbar ) */
 
 nav.navbar {
@@ -275,7 +276,7 @@ section {
 }
 
 .section {
-	padding: 40px 0;
+	padding: 10px 0;
 	background: #fff;
 }
 
@@ -337,12 +338,8 @@ section {
 }
 
 .intro-table-hover:hover {
-	background-image: url('../img/table-2-hover.jpg');
+	background-image: url('../img/table-2.jpg');
 	background-position: 50% 50%;
-}
-
-.intro-table-third {
-	background-image: url('../img/table-3.jpg');
 }
 
 .intro-table-hover .expand {
@@ -783,7 +780,7 @@ footer .social-footer li:hover a {
 	position: relative;
 	padding: 45px 30px;
 	text-align: center;
-	background: url('../img/popup.jpg');
+	background-color: #34AFF5; 	/* url('../img/popup.jpg'); */
 	box-shadow: none;
 	border-radius: 2px;
 }

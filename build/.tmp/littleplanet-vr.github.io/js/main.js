@@ -16,6 +16,15 @@ jQuery(function($) {
 			});
 		});
 
+		// Twitter stream
+		/* $('section section-padded blue-bg container row col-md-8 col-md-offset-2 owl-twitter owl-carousel').twittie({
+				username: 'littlevrplanet',
+				list: '',
+				dateFormat: '%b. %d, %Y',
+				template: '<div class="item text-center"><i class="icon fa fa-twitter"></i><h4 class="white light">{{tweet}}</h4><h4 class="light-white light">{{date}}</h4>',
+				count: 10
+		});*/
+
 		// Header Init
 		if ($(window).height() > $(window).width()) {
 			var ratio = $('.parallax').width() / $('.parallax').height();
@@ -152,7 +161,7 @@ jQuery(function($) {
 			bottomMargin = parseInt($dialog.css('marginBottom'), 10);
 
 		// Make sure you don't hide the top part of the modal w/ a negative margin
-		// if it's longer than the screen height, and keep the margin equal to 
+		// if it's longer than the screen height, and keep the margin equal to
 		// the bottom margin of the modal
 		if (offset < bottomMargin) offset = bottomMargin;
 		$dialog.css("margin-top", offset);
