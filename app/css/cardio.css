@@ -228,6 +228,12 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	background: #00a8ff;
 }
 
+.btn.btn-white-fill-full {
+	color: #00a8ff;
+	border-color: #fff;
+	background: #fff;
+}
+
 .btn.btn-white-fill {
 	color: #fff;
 	border-color: #fff;
@@ -324,10 +330,21 @@ section {
 	background-image: url('../img/table-1.jpg');
 }
 
+.intro-table-solid {
+	background-image: url('../img/table-2.jpg');
+}
+
 .intro-table-hover {
 	-webkit-transition: background-image 0.3s ease, background-position 0.3s;
 	transition: background-image 0.3s ease, background-position 0.3s;
 	background-image: url('../img/table-2.jpg');
+}
+
+.intro-table-solid h4 {
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
 }
 
 .intro-table-hover h4 {
@@ -340,6 +357,17 @@ section {
 .intro-table-hover:hover {
 	background-image: url('../img/table-2.jpg');
 	background-position: 50% 50%;
+}
+
+.intro-table-solid .expand {
+	margin: 30px;
+	margin-top: 120px;
+	opacity: 1;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s ease, opacity 0.3s;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
 }
 
 .intro-table-hover .expand {

@@ -36,12 +36,11 @@ html(lang='en')
                       | are expensive that’s why enjoying virtual reality is not
                       | allowed to everybody.
             .col-md-4
-              .intro-table.intro-table-hover
-                h5.white.heading.hide-hover Are you interested?
+              .intro-table.intro-table-solid
                 .bottom
                   h4.white.heading.small-heading.no-margin.regular Register
                   h4.white.heading.small-pt for see the project evolution
-                  a.btn.btn-white-fill.expand(data-toggle='modal', data-target='#modal1') 
+                  a.btn.btn-white-fill-full.expand(data-toggle='modal', data-target='#modal1') 
                     | Request invite
       section#services.section
         .container
@@ -55,16 +54,17 @@ html(lang='en')
             h4.light.muted We&apos;re a dream team!
           .row
             include ./views/team.jade
-      section.section.section-padded.blue-bg
-        .container
-          .row
-            .col-md-8.col-md-offset-2
-              .owl-twitter.owl-carousel
-                .item.text-center
-                  //
-                    i.icon.fa.fa-twitter
-                    h4.white.light To enjoy the glow of good health, you must exercise.
-                    h4.light-white.light #health #training #exercise
+      //
+        section.section.section-padded.blue-bg
+          .container
+            .row
+              .col-md-8.col-md-offset-2
+                .owl-twitter.owl-carousel
+                  .item.text-center
+                    //
+                      i.icon.fa.fa-twitter
+                      h4.white.light To enjoy the glow of good health, you must exercise.
+                      h4.light-white.light #health #training #exercise
       #modal1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
         .modal-dialog
           .modal-content.modal-popup
@@ -118,3 +118,10 @@ html(lang='en')
           i.arrow_up
       // Scripts
       include ./views/scripts.jade
+      
+      //
+        Añadir boton de registro tras el Our goal
+        Discover the project usar para registrar
+        Ismael Faro add to Team
+        Add rrss to team
+        Dossier completar
